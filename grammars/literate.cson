@@ -51,6 +51,14 @@
       }
     ]
   }
+  {
+    'begin': '^(@)\\s.*$'
+    'beginCaptures':
+      '0':
+        'name': 'keyword.control.literate'
+    'end': '^(<<([^>]+)>>=)'
+    'name': 'markup.raw.literate'
+  }
 
 
 
@@ -63,7 +71,7 @@
         'name': 'entity.name.section.literate'
       '2':
         'name': 'entity.name.type.literate'
-    'end': '^@[^@]'
+    'end': '^@(\\([^)]\\))?\\s.*$'
     'name': 'markup.code.coffee.literate'
     'contentName': 'source.coffee'
     'patterns': [
@@ -81,7 +89,7 @@
         'name': 'entity.name.section.literate'
       '2':
         'name': 'entity.name.type.literate'
-    'end': '^@[^@]'
+    'end': '^@(\\([^)]\\))?\\s.*$'
     'name': 'markup.code.js.literate'
     'contentName': 'source.js'
     'patterns': [
@@ -99,7 +107,7 @@
         'name': 'entity.name.section.literate'
       '2':
         'name': 'entity.name.type.literate'
-    'end': '^@[^@]'
+    'end': '^@(\\([^)]\\))?\\s.*$'
     'name': 'markup.code.literate'
     'patterns': [
       {
@@ -116,7 +124,7 @@
         'name': 'entity.name.section.literate'
       '2':
         'name': 'entity.name.type.literate'
-    'end': '^@[^@]'
+    'end': '^@(\\([^)]\\))?\\s.*$'
     'name': 'markup.code.json.literate'
     'contentName': 'source.json'
     'patterns': [
@@ -134,7 +142,7 @@
         'name': 'entity.name.section.literate'
       '2':
         'name': 'entity.name.type.literate'
-    'end': '^@[^@]'
+    'end': '^@(\\([^)]\\))?\\s.*$'
     'name': 'markup.code.css.literate'
     'contentName': 'source.css'
     'patterns': [
@@ -152,7 +160,7 @@
         'name': 'entity.name.section.literate'
       '2':
         'name': 'entity.name.type.literate'
-    'end': '^@[^@]'
+    'end': '^@(\\([^)]\\))?\\s.*$'
     'name': 'markup.code.less.literate'
     'contentName': 'source.css.less'
     'patterns': [
@@ -170,7 +178,7 @@
         'name': 'entity.name.section.literate'
       '2':
         'name': 'entity.name.type.literate'
-    'end': '^@[^@]'
+    'end': '^@(\\([^)]\\))?\\s.*$'
     'name': 'markup.code.xml.literate'
     'contentName': 'text.xml'
     'patterns': [
@@ -188,7 +196,7 @@
         'name': 'entity.name.section.literate'
       '2':
         'name': 'entity.name.type.literate'
-    'end': '^@[^@]'
+    'end': '^@(\\([^)]\\))?\\s.*$'
     'name': 'markup.code.ruby.literate'
     'contentName': 'source.ruby'
     'patterns': [
@@ -206,7 +214,7 @@
         'name': 'entity.name.section.literate'
       '2':
         'name': 'entity.name.type.literate'
-    'end': '^@[^@]'
+    'end': '^@(\\([^)]\\))?\\s.*$'
     'name': 'markup.code.java.literate'
     'contentName': 'source.java'
     'patterns': [
@@ -224,7 +232,7 @@
         'name': 'entity.name.section.literate'
       '2':
         'name': 'entity.name.type.literate'
-    'end': '^@[^@]'
+    'end': '^@(\\([^)]\\))?\\s.*$'
     'name': 'markup.code.erlang.literate'
     'contentName': 'source.erlang'
     'patterns': [
@@ -242,7 +250,7 @@
         'name': 'entity.name.section.literate'
       '2':
         'name': 'entity.name.type.literate'
-    'end': '^@[^@]'
+    'end': '^@(\\([^)]\\))?\\s.*$'
     'name': 'markup.code.cs.literate'
     'contentName': 'source.cs'
     'patterns': [
@@ -260,7 +268,7 @@
         'name': 'entity.name.section.literate'
       '2':
         'name': 'entity.name.type.literate'
-    'end': '^@[^@]'
+    'end': '^@(\\([^)]\\))?\\s.*$'
     'name': 'markup.code.php.literate'
     'contentName': 'source.php'
     'patterns': [
@@ -278,7 +286,7 @@
         'name': 'entity.name.section.literate'
       '2':
         'name': 'entity.name.type.literate'
-    'end': '^@[^@]'
+    'end': '^@(\\([^)]\\))?\\s.*$'
     'name': 'markup.code.shell.literate'
     'contentName': 'source.shell'
     'patterns': [
@@ -296,7 +304,7 @@
         'name': 'entity.name.section.literate'
       '2':
         'name': 'entity.name.type.literate'
-    'end': '^@[^@]'
+    'end': '^@(\\([^)]\\))?\\s.*$'
     'name': 'markup.code.python.literate'
     'contentName': 'source.python'
     'patterns': [
@@ -314,7 +322,7 @@
         'name': 'entity.name.section.literate'
       '2':
         'name': 'entity.name.type.literate'
-    'end': '^@[^@]'
+    'end': '^@(\\([^)]\\))?\\s.*$'
     'name': 'markup.code.c.literate'
     'contentName': 'source.c'
     'patterns': [
@@ -332,7 +340,7 @@
         'name': 'entity.name.section.literate'
       '2':
         'name': 'entity.name.type.literate'
-    'end': '^@[^@]'
+    'end': '^@(\\([^)]\\))?\\s.*$'
     'name': 'markup.code.c++.literate'
     'contentName': 'source.c++'
     'patterns': [
@@ -350,7 +358,7 @@
         'name': 'entity.name.section.literate'
       '2':
         'name': 'entity.name.type.literate'
-    'end': '^@[^@]'
+    'end': '^@(\\([^)]\\))?\\s.*$'
     'name': 'markup.code.objc.literate'
     'contentName': 'source.objc'
     'patterns': [
@@ -368,7 +376,7 @@
         'name': 'entity.name.section.literate'
       '2':
         'name': 'entity.name.type.literate'
-    'end': '^@[^@]'
+    'end': '^@(\\([^)]\\))?\\s.*$'
     'name': 'markup.code.html.literate'
     'contentName': 'source.html.basic'
     'patterns': [
@@ -386,7 +394,7 @@
         'name': 'entity.name.section.literate'
       '2':
         'name': 'entity.name.type.literate'
-    'end': '^@[^@]'
+    'end': '^@(\\([^)]\\))?\\s.*$'
     'name': 'markup.code.yaml.literate'
     'contentName': 'source.yaml'
     'patterns': [
@@ -404,7 +412,7 @@
         'name': 'entity.name.section.literate'
       '2':
         'name': 'entity.name.type.literate'
-    'end': '^@[^@]'
+    'end': '^@(\\([^)]\\))?\\s.*$'
     'name': 'markup.code.elixir.literate'
     'contentName': 'source.elixir'
     'patterns': [
@@ -418,7 +426,7 @@
     'beginCaptures':
       '0':
         'name': 'keyword.control.literate'
-    'end': '^@[^@]'
+    'end': '^@(\\([^)]\\))?\\s.*$'
     'name': 'markup.raw.literate'
   }
 ]
