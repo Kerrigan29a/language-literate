@@ -1,0 +1,7 @@
+'.source.literate':
+  'code chunk':
+    'preffix': '<<'
+    'body': '<<$1>>=\n$2\n@$0'
+  'root code chunk':
+    'preffix': '<<*'
+    'body': '<<*>>=\n$1\n@$0'

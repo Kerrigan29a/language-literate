@@ -1,0 +1,3 @@
+'.source.literate:not(.markup.code)':
+  'editor':
+    'softWrap': true
