@@ -1,11 +1,10 @@
 {
   "name": "language-literate",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Syntax highlighting and snippets for WEB, CWEB and Noweb (Literate Programing) files.",
   "repository": "https://github.com/kerrigan29a/language-literate",
   "engines": {
     "atom": "*"
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }
