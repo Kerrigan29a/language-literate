@@ -3,6 +3,7 @@
 'fileTypes': [
   'w'
   'nw'
+  'noweb'
 ]
 
 
@@ -65,7 +66,7 @@
       { 'include': '#double_at' }
       { 'include': '#link1' }
       { 'include': '#link2' }
-      { 'include': 'source.gmf' }
+      { 'include': 'source.gfm' }
     ]
   }
   {
