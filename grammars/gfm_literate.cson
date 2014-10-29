@@ -1,0 +1,14 @@
+'name': 'Literate code (Markdown)'
+'scopeName': 'source.gfm.literate'
+'fileTypes': [
+  'w'
+  'nw'
+  'noweb'
+]
+'firstLineMatch': '^\\s*.*\\s*literate:(markdown|mdown|md).*\\s*$'
+
+
+'patterns': [
+  { 'include': 'source.literate' }
+  { 'include': 'source.gfm' }
+]
