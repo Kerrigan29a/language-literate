@@ -4,344 +4,391 @@
   'w'
   'nw'
 ]
+
+
+
+'firstLineMatch': '^\\s*.*\\s*literate:.*\\s*$'
+
+
+
 'patterns': [
   {
-    'begin': '^(<<([^>]+)>>=)\\((coffee-?(script)?)\\)\\s*$'
+    'begin': '^(<<(coffee-?(script)?):([^>]+)>>=)\\s*$'
     'beginCaptures':
       '0':
         'name': 'keyword.control.literate'
       '1':
-        'name': 'entity.name.section.literate'
-      '2':
         'name': 'entity.name.type.literate'
-    'end': '^@(\\([^)]*\\))?\\s.*$'
+      '2':
+        'name': 'entity.name.section.literate'
+    'end': '^@\\s.*$'
     'name': 'markup.code.coffee.literate'
     'contentName': 'source.coffee'
     'patterns': [
       { 'include': 'source.coffee' }
-      { 'include': '$self' }
+      { 'include': '#double_at' }
+      { 'include': '#link1' }
+      { 'include': '#link2' }
     ]
   }
   {
-    'begin': '^(<<([^>]+)>>=)\\((javascript|js)\\)\\s*$'
+    'begin': '^(<<(javascript|js):([^>]+)>>=)\\s*$'
     'beginCaptures':
       '0':
         'name': 'keyword.control.literate'
       '1':
-        'name': 'entity.name.section.literate'
-      '2':
         'name': 'entity.name.type.literate'
-    'end': '^@(\\([^)]*\\))?\\s.*$'
+      '2':
+        'name': 'entity.name.section.literate'
+    'end': '^@\\s.*$'
     'name': 'markup.code.js.literate'
     'contentName': 'source.js'
     'patterns': [
       { 'include': 'source.js' }
-      { 'include': '$self' }
+      { 'include': '#double_at' }
+      { 'include': '#link1' }
+      { 'include': '#link2' }
     ]
   }
   {
-    'begin': '^(<<([^>]+)>>=)\\((markdown|mdown|md)\\)\\s*$'
+    'begin': '^(<<(markdown|mdown|md):([^>]+)>>=)\\s*$'
     'beginCaptures':
       '0':
         'name': 'keyword.control.literate'
       '1':
-        'name': 'entity.name.section.literate'
-      '2':
         'name': 'entity.name.type.literate'
-    'end': '^@(\\([^)]*\\))?\\s.*$'
+      '2':
+        'name': 'entity.name.section.literate'
+    'end': '^@\\s.*$'
     'name': 'markup.code.literate'
     'patterns': [
       { 'include': 'source.gmf' }
-      { 'include': '$self' }
+      { 'include': '#double_at' }
+      { 'include': '#link1' }
+      { 'include': '#link2' }
     ]
   }
   {
-    'begin': '^(<<([^>]+)>>=)\\((json)\\)\\s*$'
+    'begin': '^(<<(json):([^>]+)>>=)\\s*$'
     'beginCaptures':
       '0':
         'name': 'keyword.control.literate'
       '1':
-        'name': 'entity.name.section.literate'
-      '2':
         'name': 'entity.name.type.literate'
-    'end': '^@(\\([^)]*\\))?\\s.*$'
+      '2':
+        'name': 'entity.name.section.literate'
+    'end': '^@\\s.*$'
     'name': 'markup.code.json.literate'
     'contentName': 'source.json'
     'patterns': [
       { 'include': 'source.json' }
-      { 'include': '$self' }
+      { 'include': '#double_at' }
+      { 'include': '#link1' }
+      { 'include': '#link2' }
     ]
   }
   {
-    'begin': '^(<<([^>]+)>>=)\\((css)\\)\\s*$'
+    'begin': '^(<<(css):([^>]+)>>=)\\s*$'
     'beginCaptures':
       '0':
         'name': 'keyword.control.literate'
       '1':
-        'name': 'entity.name.section.literate'
-      '2':
         'name': 'entity.name.type.literate'
-    'end': '^@(\\([^)]*\\))?\\s.*$'
+      '2':
+        'name': 'entity.name.section.literate'
+    'end': '^@\\s.*$'
     'name': 'markup.code.css.literate'
     'contentName': 'source.css'
     'patterns': [
       { 'include': 'source.css' }
-      { 'include': '$self' }
+      { 'include': '#double_at' }
+      { 'include': '#link1' }
+      { 'include': '#link2' }
     ]
   }
   {
-    'begin': '^(<<([^>]+)>>=)\\((less)\\)\\s*$'
+    'begin': '^(<<(less):([^>]+)>>=)\\s*$'
     'beginCaptures':
       '0':
         'name': 'keyword.control.literate'
       '1':
-        'name': 'entity.name.section.literate'
-      '2':
         'name': 'entity.name.type.literate'
-    'end': '^@(\\([^)]*\\))?\\s.*$'
+      '2':
+        'name': 'entity.name.section.literate'
+    'end': '^@\\s.*$'
     'name': 'markup.code.less.literate'
     'contentName': 'source.css.less'
     'patterns': [
       { 'include': 'source.css.less' }
-      { 'include': '$self' }
+      { 'include': '#double_at' }
+      { 'include': '#link1' }
+      { 'include': '#link2' }
     ]
   }
   {
-    'begin': '^(<<([^>]+)>>=)\\((xml)\\)\\s*$'
+    'begin': '^(<<(xml):([^>]+)>>=)\\s*$'
     'beginCaptures':
       '0':
         'name': 'keyword.control.literate'
       '1':
-        'name': 'entity.name.section.literate'
-      '2':
         'name': 'entity.name.type.literate'
-    'end': '^@(\\([^)]*\\))?\\s.*$'
+      '2':
+        'name': 'entity.name.section.literate'
+    'end': '^@\\s.*$'
     'name': 'markup.code.xml.literate'
     'contentName': 'text.xml'
     'patterns': [
       { 'include': 'text.xml' }
-      { 'include': '$self' }
+      { 'include': '#double_at' }
+      { 'include': '#link1' }
+      { 'include': '#link2' }
     ]
   }
   {
-    'begin': '^(<<([^>]+)>>=)\\((ruby|rb)\\)\\s*$'
+    'begin': '^(<<(ruby|rb):([^>]+)>>=)\\s*$'
     'beginCaptures':
       '0':
         'name': 'keyword.control.literate'
       '1':
-        'name': 'entity.name.section.literate'
-      '2':
         'name': 'entity.name.type.literate'
-    'end': '^@(\\([^)]*\\))?\\s.*$'
+      '2':
+        'name': 'entity.name.section.literate'
+    'end': '^@\\s.*$'
     'name': 'markup.code.ruby.literate'
     'contentName': 'source.ruby'
     'patterns': [
       { 'include': 'source.ruby' }
-      { 'include': '$self' }
+      { 'include': '#double_at' }
+      { 'include': '#link1' }
+      { 'include': '#link2' }
     ]
   }
   {
-    'begin': '^(<<([^>]+)>>=)\\((java)\\)\\s*$'
+    'begin': '^(<<(java):([^>]+)>>=)\\s*$'
     'beginCaptures':
       '0':
         'name': 'keyword.control.literate'
       '1':
-        'name': 'entity.name.section.literate'
-      '2':
         'name': 'entity.name.type.literate'
-    'end': '^@(\\([^)]*\\))?\\s.*$'
+      '2':
+        'name': 'entity.name.section.literate'
+    'end': '^@\\s.*$'
     'name': 'markup.code.java.literate'
     'contentName': 'source.java'
     'patterns': [
       { 'include': 'source.java' }
-      { 'include': '$self' }
+      { 'include': '#double_at' }
+      { 'include': '#link1' }
+      { 'include': '#link2' }
     ]
   }
   {
-    'begin': '^(<<([^>]+)>>=)\\((erlang)\\)\\s*$'
+    'begin': '^(<<(erlang):([^>]+)>>=)\\s*$'
     'beginCaptures':
       '0':
         'name': 'keyword.control.literate'
       '1':
-        'name': 'entity.name.section.literate'
-      '2':
         'name': 'entity.name.type.literate'
-    'end': '^@(\\([^)]*\\))?\\s.*$'
+      '2':
+        'name': 'entity.name.section.literate'
+    'end': '^@\\s.*$'
     'name': 'markup.code.erlang.literate'
     'contentName': 'source.erlang'
     'patterns': [
       { 'include': 'source.erlang' }
-      { 'include': '$self' }
+      { 'include': '#double_at' }
+      { 'include': '#link1' }
+      { 'include': '#link2' }
     ]
   }
   {
-    'begin': '^(<<([^>]+)>>=)\\((cs(harp)?)\\)\\s*$'
+    'begin': '^(<<(cs(harp)?):([^>]+)>>=)\\s*$'
     'beginCaptures':
       '0':
         'name': 'keyword.control.literate'
       '1':
-        'name': 'entity.name.section.literate'
-      '2':
         'name': 'entity.name.type.literate'
-    'end': '^@(\\([^)]*\\))?\\s.*$'
+      '2':
+        'name': 'entity.name.section.literate'
+    'end': '^@\\s.*$'
     'name': 'markup.code.cs.literate'
     'contentName': 'source.cs'
     'patterns': [
       { 'include': 'source.cs' }
-      { 'include': '$self' }
+      { 'include': '#double_at' }
+      { 'include': '#link1' }
+      { 'include': '#link2' }
     ]
   }
   {
-    'begin': '^(<<([^>]+)>>=)\\((php)\\)\\s*$'
+    'begin': '^(<<(php):([^>]+)>>=)\\s*$'
     'beginCaptures':
       '0':
         'name': 'keyword.control.literate'
       '1':
-        'name': 'entity.name.section.literate'
-      '2':
         'name': 'entity.name.type.literate'
-    'end': '^@(\\([^)]*\\))?\\s.*$'
+      '2':
+        'name': 'entity.name.section.literate'
+    'end': '^@\\s.*$'
     'name': 'markup.code.php.literate'
     'contentName': 'source.php'
     'patterns': [
       { 'include': 'source.php' }
-      { 'include': '$self' }
+      { 'include': '#double_at' }
+      { 'include': '#link1' }
+      { 'include': '#link2' }
     ]
   }
   {
-    'begin': '^(<<([^>]+)>>=)\\((sh|bash)\\)\\s*$'
+    'begin': '^(<<(sh|bash):([^>]+)>>=)\\s*$'
     'beginCaptures':
       '0':
         'name': 'keyword.control.literate'
       '1':
-        'name': 'entity.name.section.literate'
-      '2':
         'name': 'entity.name.type.literate'
-    'end': '^@(\\([^)]*\\))?\\s.*$'
+      '2':
+        'name': 'entity.name.section.literate'
+    'end': '^@\\s.*$'
     'name': 'markup.code.shell.literate'
     'contentName': 'source.shell'
     'patterns': [
       { 'include': 'source.shell' }
-      { 'include': '$self' }
+      { 'include': '#double_at' }
+      { 'include': '#link1' }
+      { 'include': '#link2' }
     ]
   }
   {
-    'begin': '^(<<([^>]+)>>=)\\((py(thon)?)\\)\\s*$'
+    'begin': '^(<<(py(thon)?):([^>]+)>>=)\\s*$'
     'beginCaptures':
       '0':
         'name': 'keyword.control.literate'
       '1':
-        'name': 'entity.name.section.literate'
-      '2':
         'name': 'entity.name.type.literate'
-    'end': '^@(\\([^)]*\\))?\\s.*$'
+      '2':
+        'name': 'entity.name.section.literate'
+    'end': '^@\\s.*$'
     'name': 'markup.code.python.literate'
     'contentName': 'source.python'
     'patterns': [
       { 'include': 'source.python' }
-      { 'include': '$self' }
+      { 'include': '#double_at' }
+      { 'include': '#link1' }
+      { 'include': '#link2' }
     ]
   }
   {
-    'begin': '^(<<([^>]+)>>=)\\((c)\\)\\s*$'
+    'begin': '^(<<(c):([^>]+)>>=)\\s*$'
     'beginCaptures':
       '0':
         'name': 'keyword.control.literate'
       '1':
-        'name': 'entity.name.section.literate'
-      '2':
         'name': 'entity.name.type.literate'
-    'end': '^@(\\([^)]*\\))?\\s.*$'
+      '2':
+        'name': 'entity.name.section.literate'
+    'end': '^@\\s.*$'
     'name': 'markup.code.c.literate'
     'contentName': 'source.c'
     'patterns': [
       { 'include': 'source.c' }
-      { 'include': '$self' }
+      { 'include': '#double_at' }
+      { 'include': '#link1' }
+      { 'include': '#link2' }
     ]
   }
   {
-    'begin': '^(<<([^>]+)>>=)\\((c(pp|\\+\\+))\\)\\s*$'
+    'begin': '^(<<(c(pp|\\+\\+)):([^>]+)>>=)\\s*$'
     'beginCaptures':
       '0':
         'name': 'keyword.control.literate'
       '1':
-        'name': 'entity.name.section.literate'
-      '2':
         'name': 'entity.name.type.literate'
-    'end': '^@(\\([^)]*\\))?\\s.*$'
+      '2':
+        'name': 'entity.name.section.literate'
+    'end': '^@\\s.*$'
     'name': 'markup.code.c++.literate'
     'contentName': 'source.c++'
     'patterns': [
       { 'include': 'source.c++' }
-      { 'include': '$self' }
+      { 'include': '#double_at' }
+      { 'include': '#link1' }
+      { 'include': '#link2' }
     ]
   }
   {
-    'begin': '^(<<([^>]+)>>=)\\((objc|objective-c)\\)\\s*$'
+    'begin': '^(<<(objc|objective-c):([^>]+)>>=)\\s*$'
     'beginCaptures':
       '0':
         'name': 'keyword.control.literate'
       '1':
-        'name': 'entity.name.section.literate'
-      '2':
         'name': 'entity.name.type.literate'
-    'end': '^@(\\([^)]*\\))?\\s.*$'
+      '2':
+        'name': 'entity.name.section.literate'
+    'end': '^@\\s.*$'
     'name': 'markup.code.objc.literate'
     'contentName': 'source.objc'
     'patterns': [
       { 'include': 'source.objc' }
-      { 'include': '$self' }
+      { 'include': '#double_at' }
+      { 'include': '#link1' }
+      { 'include': '#link2' }
     ]
   }
   {
-    'begin': '^(<<([^>]+)>>=)\\((html)\\)\\s*$'
+    'begin': '^(<<(html):([^>]+)>>=)\\s*$'
     'beginCaptures':
       '0':
         'name': 'keyword.control.literate'
       '1':
-        'name': 'entity.name.section.literate'
-      '2':
         'name': 'entity.name.type.literate'
-    'end': '^@(\\([^)]*\\))?\\s.*$'
+      '2':
+        'name': 'entity.name.section.literate'
+    'end': '^@\\s.*$'
     'name': 'markup.code.html.literate'
     'contentName': 'source.html.basic'
     'patterns': [
       { 'include': 'text.html.basic' }
-      { 'include': '$self' }
+      { 'include': '#double_at' }
+      { 'include': '#link1' }
+      { 'include': '#link2' }
     ]
   }
   {
-    'begin': '^(<<([^>]+)>>=)\\((ya?ml)\\)\\s*$'
+    'begin': '^(<<(ya?ml):([^>]+)>>=)\\s*$'
     'beginCaptures':
       '0':
         'name': 'keyword.control.literate'
       '1':
-        'name': 'entity.name.section.literate'
-      '2':
         'name': 'entity.name.type.literate'
-    'end': '^@(\\([^)]*\\))?\\s.*$'
+      '2':
+        'name': 'entity.name.section.literate'
+    'end': '^@\\s.*$'
     'name': 'markup.code.yaml.literate'
     'contentName': 'source.yaml'
     'patterns': [
       { 'include': 'source.yaml' }
-      { 'include': '$self' }
+      { 'include': '#double_at' }
+      { 'include': '#link1' }
+      { 'include': '#link2' }
     ]
   }
   {
-    'begin': '^(<<([^>]+)>>=)\\((elixir)\\)\\s*$'
+    'begin': '^(<<(elixir):([^>]+)>>=)\\s*$'
     'beginCaptures':
       '0':
         'name': 'keyword.control.literate'
       '1':
-        'name': 'entity.name.section.literate'
-      '2':
         'name': 'entity.name.type.literate'
-    'end': '^@(\\([^)]*\\))?\\s.*$'
+      '2':
+        'name': 'entity.name.section.literate'
+    'end': '^@\\s.*$'
     'name': 'markup.code.elixir.literate'
     'contentName': 'source.elixir'
     'patterns': [
       { 'include': 'source.elixir' }
-      { 'include': '$self' }
+      { 'include': '#double_at' }
+      { 'include': '#link1' }
+      { 'include': '#link2' }
     ]
   }
   {
@@ -349,58 +396,35 @@
     'beginCaptures':
       '0':
         'name': 'keyword.control.literate'
-    'end': '^@(\\([^)]*\\))?\\s.*$'
+    'end': '^@\\s.*$'
     'name': 'markup.raw.literate'
-  }
-
-
-
-  {
-    'begin': '^(@)\\((html)\\)\\s.*$'
-    'beginCaptures':
-      '0':
-        'name': 'keyword.control.literate'
-      '1':
-        'name': 'entity.name.type.literate'
-    'end': '^(<<([^>]+)>>=)'
-    'name': 'markup.code.html.literate'
-    'contentName': 'source.html.basic'
+    'contentName': 'source.raw'
     'patterns': [
-      { 'include': 'text.html.basic' }
-      { 'include': '$self' }
+      { 'include': '#double_at' }
+      { 'include': '#link1' }
+      { 'include': '#link2' }
     ]
   }
-  {
-    'begin': '^(@)\\((markdown|mdown|md)\\)\\s.*$'
-    'beginCaptures':
-      '0':
-        'name': 'keyword.control.literate'
-      '1':
-        'name': 'entity.name.type.literate'
-    'end': '^(<<([^>]+)>>=)'
-    'name': 'markup.code.html.literate'
-    'contentName': 'source.html.basic'
-    'patterns': [
-      { 'include': 'source.gmf' }
-      { 'include': '$self' }
-    ]
-  }
-  {
-    'begin': '^(@)\\s.*$'
-    'beginCaptures':
-      '0':
-        'name': 'keyword.control.literate'
-    'end': '^(<<([^>]+)>>=)'
-    'name': 'markup.raw.literate'
-  }
+]
 
 
-
-  {
+'repository': {
+  'double_at': {
     'match': '^@@(\\s|$)'
     'name': 'keyword.control.literate'
   }
-  {
+  'link1': {
+    'match': '^\\s*<<([^:]+):([^>]+)>>\\s*$'
+    'name': 'link'
+    'captures':
+      '0':
+        'name': 'keyword.control.literate'
+      '1':
+        'name': 'entity.name.type.literate'
+      '2':
+        'name': 'markup.underline.link.literate'
+  }
+  'link2': {
     'match': '^\\s*<<([^>]+)>>\\s*$'
     'name': 'link'
     'captures':
@@ -409,4 +433,4 @@
       '1':
         'name': 'markup.underline.link.literate'
   }
-]
+}
