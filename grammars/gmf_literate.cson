@@ -5,5 +5,6 @@
 
 
 'patterns': [
+  { 'include': 'source.literate' }
   { 'include': 'source.gmf' }
 ]

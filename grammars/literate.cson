@@ -16,7 +16,7 @@
     'begin': '^(<<(coffee-?(script)?):([^>]+)>>=)\\s*$'
     'beginCaptures':
       '0':
-        'name': 'keyword.control.literate'
+        'name': 'constant.language.literate'
       '1':
         'name': 'entity.name.type.literate'
       '2':
@@ -35,7 +35,7 @@
     'begin': '^(<<(javascript|js):([^>]+)>>=)\\s*$'
     'beginCaptures':
       '0':
-        'name': 'keyword.control.literate'
+        'name': 'constant.language.literate'
       '1':
         'name': 'entity.name.type.literate'
       '2':
@@ -54,7 +54,7 @@
     'begin': '^(<<(markdown|mdown|md):([^>]+)>>=)\\s*$'
     'beginCaptures':
       '0':
-        'name': 'keyword.control.literate'
+        'name': 'constant.language.literate'
       '1':
         'name': 'entity.name.type.literate'
       '2':
@@ -72,7 +72,7 @@
     'begin': '^(<<(json):([^>]+)>>=)\\s*$'
     'beginCaptures':
       '0':
-        'name': 'keyword.control.literate'
+        'name': 'constant.language.literate'
       '1':
         'name': 'entity.name.type.literate'
       '2':
@@ -91,7 +91,7 @@
     'begin': '^(<<(css):([^>]+)>>=)\\s*$'
     'beginCaptures':
       '0':
-        'name': 'keyword.control.literate'
+        'name': 'constant.language.literate'
       '1':
         'name': 'entity.name.type.literate'
       '2':
@@ -110,7 +110,7 @@
     'begin': '^(<<(less):([^>]+)>>=)\\s*$'
     'beginCaptures':
       '0':
-        'name': 'keyword.control.literate'
+        'name': 'constant.language.literate'
       '1':
         'name': 'entity.name.type.literate'
       '2':
@@ -129,7 +129,7 @@
     'begin': '^(<<(xml):([^>]+)>>=)\\s*$'
     'beginCaptures':
       '0':
-        'name': 'keyword.control.literate'
+        'name': 'constant.language.literate'
       '1':
         'name': 'entity.name.type.literate'
       '2':
@@ -148,7 +148,7 @@
     'begin': '^(<<(ruby|rb):([^>]+)>>=)\\s*$'
     'beginCaptures':
       '0':
-        'name': 'keyword.control.literate'
+        'name': 'constant.language.literate'
       '1':
         'name': 'entity.name.type.literate'
       '2':
@@ -167,7 +167,7 @@
     'begin': '^(<<(java):([^>]+)>>=)\\s*$'
     'beginCaptures':
       '0':
-        'name': 'keyword.control.literate'
+        'name': 'constant.language.literate'
       '1':
         'name': 'entity.name.type.literate'
       '2':
@@ -186,7 +186,7 @@
     'begin': '^(<<(erlang):([^>]+)>>=)\\s*$'
     'beginCaptures':
       '0':
-        'name': 'keyword.control.literate'
+        'name': 'constant.language.literate'
       '1':
         'name': 'entity.name.type.literate'
       '2':
@@ -205,7 +205,7 @@
     'begin': '^(<<(cs(harp)?):([^>]+)>>=)\\s*$'
     'beginCaptures':
       '0':
-        'name': 'keyword.control.literate'
+        'name': 'constant.language.literate'
       '1':
         'name': 'entity.name.type.literate'
       '2':
@@ -224,7 +224,7 @@
     'begin': '^(<<(php):([^>]+)>>=)\\s*$'
     'beginCaptures':
       '0':
-        'name': 'keyword.control.literate'
+        'name': 'constant.language.literate'
       '1':
         'name': 'entity.name.type.literate'
       '2':
@@ -243,7 +243,7 @@
     'begin': '^(<<(sh|bash):([^>]+)>>=)\\s*$'
     'beginCaptures':
       '0':
-        'name': 'keyword.control.literate'
+        'name': 'constant.language.literate'
       '1':
         'name': 'entity.name.type.literate'
       '2':
@@ -262,7 +262,7 @@
     'begin': '^(<<(py(thon)?):([^>]+)>>=)\\s*$'
     'beginCaptures':
       '0':
-        'name': 'keyword.control.literate'
+        'name': 'constant.language.literate'
       '1':
         'name': 'entity.name.type.literate'
       '2':
@@ -281,7 +281,7 @@
     'begin': '^(<<(c):([^>]+)>>=)\\s*$'
     'beginCaptures':
       '0':
-        'name': 'keyword.control.literate'
+        'name': 'constant.language.literate'
       '1':
         'name': 'entity.name.type.literate'
       '2':
@@ -300,7 +300,7 @@
     'begin': '^(<<(c(pp|\\+\\+)):([^>]+)>>=)\\s*$'
     'beginCaptures':
       '0':
-        'name': 'keyword.control.literate'
+        'name': 'constant.language.literate'
       '1':
         'name': 'entity.name.type.literate'
       '2':
@@ -319,7 +319,7 @@
     'begin': '^(<<(objc|objective-c):([^>]+)>>=)\\s*$'
     'beginCaptures':
       '0':
-        'name': 'keyword.control.literate'
+        'name': 'constant.language.literate'
       '1':
         'name': 'entity.name.type.literate'
       '2':
@@ -338,7 +338,7 @@
     'begin': '^(<<(html):([^>]+)>>=)\\s*$'
     'beginCaptures':
       '0':
-        'name': 'keyword.control.literate'
+        'name': 'constant.language.literate'
       '1':
         'name': 'entity.name.type.literate'
       '2':
@@ -357,7 +357,7 @@
     'begin': '^(<<(ya?ml):([^>]+)>>=)\\s*$'
     'beginCaptures':
       '0':
-        'name': 'keyword.control.literate'
+        'name': 'constant.language.literate'
       '1':
         'name': 'entity.name.type.literate'
       '2':
@@ -376,7 +376,7 @@
     'begin': '^(<<(elixir):([^>]+)>>=)\\s*$'
     'beginCaptures':
       '0':
-        'name': 'keyword.control.literate'
+        'name': 'constant.language.literate'
       '1':
         'name': 'entity.name.type.literate'
       '2':
@@ -395,7 +395,7 @@
     'begin': '^(<<([^>]+)>>=).*$'
     'beginCaptures':
       '0':
-        'name': 'keyword.control.literate'
+        'name': 'constant.language.literate'
     'end': '^@\\s.*$'
     'name': 'markup.raw.literate'
     'contentName': 'source.raw'
@@ -411,14 +411,14 @@
 'repository': {
   'double_at': {
     'match': '^@@(\\s|$)'
-    'name': 'keyword.control.literate'
+    'name': 'constant.language.literate'
   }
   'link1': {
     'match': '^\\s*<<([^:]+):([^>]+)>>\\s*$'
     'name': 'link'
     'captures':
       '0':
-        'name': 'keyword.control.literate'
+        'name': 'constant.language.literate'
       '1':
         'name': 'entity.name.type.literate'
       '2':
@@ -429,7 +429,7 @@
     'name': 'link'
     'captures':
       '0':
-        'name': 'keyword.control.literate'
+        'name': 'constant.language.literate'
       '1':
         'name': 'markup.underline.link.literate'
   }
