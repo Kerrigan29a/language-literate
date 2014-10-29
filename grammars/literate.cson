@@ -16,7 +16,7 @@
     'begin': '^(<<(coffee-?(script)?):([^>]+)>>=)\\s*$'
     'beginCaptures':
       '0':
-        'name': 'constant.language.literate'
+        'name': 'constant.language.lterat'
       '1':
         'name': 'entity.name.type.literate'
       '2':
@@ -25,14 +25,14 @@
     'name': 'markup.code.coffee.literate'
     'contentName': 'source.coffee'
     'patterns': [
-      { 'include': 'source.coffee' }
       { 'include': '#double_at' }
       { 'include': '#link1' }
       { 'include': '#link2' }
+      { 'include': 'source.coffee' }
     ]
   }
   {
-    'begin': '^(<<(javascript|js):([^>]+)>>=)\\s*$'
+    'begin': '^<<(javascript|js):([^>]+)>>=\\s*$'
     'beginCaptures':
       '0':
         'name': 'constant.language.literate'
@@ -44,14 +44,14 @@
     'name': 'markup.code.js.literate'
     'contentName': 'source.js'
     'patterns': [
-      { 'include': 'source.js' }
       { 'include': '#double_at' }
       { 'include': '#link1' }
       { 'include': '#link2' }
+      { 'include': 'source.js' }
     ]
   }
   {
-    'begin': '^(<<(markdown|mdown|md):([^>]+)>>=)\\s*$'
+    'begin': '^<<(markdown|mdown|md):([^>]+)>>=\\s*$'
     'beginCaptures':
       '0':
         'name': 'constant.language.literate'
@@ -62,14 +62,14 @@
     'end': '^@\\s.*$'
     'name': 'markup.code.literate'
     'patterns': [
-      { 'include': 'source.gmf' }
       { 'include': '#double_at' }
       { 'include': '#link1' }
       { 'include': '#link2' }
+      { 'include': 'source.gmf' }
     ]
   }
   {
-    'begin': '^(<<(json):([^>]+)>>=)\\s*$'
+    'begin': '^<<(json):([^>]+)>>=\\s*$'
     'beginCaptures':
       '0':
         'name': 'constant.language.literate'
@@ -81,14 +81,14 @@
     'name': 'markup.code.json.literate'
     'contentName': 'source.json'
     'patterns': [
-      { 'include': 'source.json' }
       { 'include': '#double_at' }
       { 'include': '#link1' }
       { 'include': '#link2' }
+      { 'include': 'source.json' }
     ]
   }
   {
-    'begin': '^(<<(css):([^>]+)>>=)\\s*$'
+    'begin': '^<<(css):([^>]+)>>=\\s*$'
     'beginCaptures':
       '0':
         'name': 'constant.language.literate'
@@ -100,14 +100,14 @@
     'name': 'markup.code.css.literate'
     'contentName': 'source.css'
     'patterns': [
-      { 'include': 'source.css' }
       { 'include': '#double_at' }
       { 'include': '#link1' }
       { 'include': '#link2' }
+      { 'include': 'source.css' }
     ]
   }
   {
-    'begin': '^(<<(less):([^>]+)>>=)\\s*$'
+    'begin': '^<<(less):([^>]+)>>=\\s*$'
     'beginCaptures':
       '0':
         'name': 'constant.language.literate'
@@ -119,14 +119,14 @@
     'name': 'markup.code.less.literate'
     'contentName': 'source.css.less'
     'patterns': [
-      { 'include': 'source.css.less' }
       { 'include': '#double_at' }
       { 'include': '#link1' }
       { 'include': '#link2' }
+      { 'include': 'source.css.less' }
     ]
   }
   {
-    'begin': '^(<<(xml):([^>]+)>>=)\\s*$'
+    'begin': '^<<(xml):([^>]+)>>=\\s*$'
     'beginCaptures':
       '0':
         'name': 'constant.language.literate'
@@ -138,14 +138,14 @@
     'name': 'markup.code.xml.literate'
     'contentName': 'text.xml'
     'patterns': [
-      { 'include': 'text.xml' }
       { 'include': '#double_at' }
       { 'include': '#link1' }
       { 'include': '#link2' }
+      { 'include': 'text.xml' }
     ]
   }
   {
-    'begin': '^(<<(ruby|rb):([^>]+)>>=)\\s*$'
+    'begin': '^<<(ruby|rb):([^>]+)>>=\\s*$'
     'beginCaptures':
       '0':
         'name': 'constant.language.literate'
@@ -157,14 +157,14 @@
     'name': 'markup.code.ruby.literate'
     'contentName': 'source.ruby'
     'patterns': [
-      { 'include': 'source.ruby' }
       { 'include': '#double_at' }
       { 'include': '#link1' }
       { 'include': '#link2' }
+      { 'include': 'source.ruby' }
     ]
   }
   {
-    'begin': '^(<<(java):([^>]+)>>=)\\s*$'
+    'begin': '^<<(java):([^>]+)>>=\\s*$'
     'beginCaptures':
       '0':
         'name': 'constant.language.literate'
@@ -176,14 +176,14 @@
     'name': 'markup.code.java.literate'
     'contentName': 'source.java'
     'patterns': [
-      { 'include': 'source.java' }
       { 'include': '#double_at' }
       { 'include': '#link1' }
       { 'include': '#link2' }
+      { 'include': 'source.java' }
     ]
   }
   {
-    'begin': '^(<<(erlang):([^>]+)>>=)\\s*$'
+    'begin': '^<<(erlang):([^>]+)>>=\\s*$'
     'beginCaptures':
       '0':
         'name': 'constant.language.literate'
@@ -195,14 +195,14 @@
     'name': 'markup.code.erlang.literate'
     'contentName': 'source.erlang'
     'patterns': [
-      { 'include': 'source.erlang' }
       { 'include': '#double_at' }
       { 'include': '#link1' }
       { 'include': '#link2' }
+      { 'include': 'source.erlang' }
     ]
   }
   {
-    'begin': '^(<<(cs(harp)?):([^>]+)>>=)\\s*$'
+    'begin': '^<<(cs(harp)?):([^>]+)>>=\\s*$'
     'beginCaptures':
       '0':
         'name': 'constant.language.literate'
@@ -214,14 +214,14 @@
     'name': 'markup.code.cs.literate'
     'contentName': 'source.cs'
     'patterns': [
-      { 'include': 'source.cs' }
       { 'include': '#double_at' }
       { 'include': '#link1' }
       { 'include': '#link2' }
+      { 'include': 'source.cs' }
     ]
   }
   {
-    'begin': '^(<<(php):([^>]+)>>=)\\s*$'
+    'begin': '^<<(php):([^>]+)>>=\\s*$'
     'beginCaptures':
       '0':
         'name': 'constant.language.literate'
@@ -233,14 +233,14 @@
     'name': 'markup.code.php.literate'
     'contentName': 'source.php'
     'patterns': [
-      { 'include': 'source.php' }
       { 'include': '#double_at' }
       { 'include': '#link1' }
       { 'include': '#link2' }
+      { 'include': 'source.php' }
     ]
   }
   {
-    'begin': '^(<<(sh|bash):([^>]+)>>=)\\s*$'
+    'begin': '^<<(sh|bash):([^>]+)>>=\\s*$'
     'beginCaptures':
       '0':
         'name': 'constant.language.literate'
@@ -252,14 +252,14 @@
     'name': 'markup.code.shell.literate'
     'contentName': 'source.shell'
     'patterns': [
-      { 'include': 'source.shell' }
       { 'include': '#double_at' }
       { 'include': '#link1' }
       { 'include': '#link2' }
+      { 'include': 'source.shell' }
     ]
   }
   {
-    'begin': '^(<<(py(thon)?):([^>]+)>>=)\\s*$'
+    'begin': '^<<(py(thon)?):([^>]+)>>=\\s*$'
     'beginCaptures':
       '0':
         'name': 'constant.language.literate'
@@ -271,14 +271,14 @@
     'name': 'markup.code.python.literate'
     'contentName': 'source.python'
     'patterns': [
-      { 'include': 'source.python' }
       { 'include': '#double_at' }
       { 'include': '#link1' }
       { 'include': '#link2' }
+      { 'include': 'source.python' }
     ]
   }
   {
-    'begin': '^(<<(c):([^>]+)>>=)\\s*$'
+    'begin': '^<<(c):([^>]+)>>=\\s*$'
     'beginCaptures':
       '0':
         'name': 'constant.language.literate'
@@ -290,14 +290,14 @@
     'name': 'markup.code.c.literate'
     'contentName': 'source.c'
     'patterns': [
-      { 'include': 'source.c' }
       { 'include': '#double_at' }
       { 'include': '#link1' }
       { 'include': '#link2' }
+      { 'include': 'source.c' }
     ]
   }
   {
-    'begin': '^(<<(c(pp|\\+\\+)):([^>]+)>>=)\\s*$'
+    'begin': '^<<(c(pp|\\+\\+)):([^>]+)>>=\\s*$'
     'beginCaptures':
       '0':
         'name': 'constant.language.literate'
@@ -309,14 +309,14 @@
     'name': 'markup.code.c++.literate'
     'contentName': 'source.c++'
     'patterns': [
-      { 'include': 'source.c++' }
       { 'include': '#double_at' }
       { 'include': '#link1' }
       { 'include': '#link2' }
+      { 'include': 'source.c++' }
     ]
   }
   {
-    'begin': '^(<<(objc|objective-c):([^>]+)>>=)\\s*$'
+    'begin': '^<<(objc|objective-c):([^>]+)>>=\\s*$'
     'beginCaptures':
       '0':
         'name': 'constant.language.literate'
@@ -328,14 +328,14 @@
     'name': 'markup.code.objc.literate'
     'contentName': 'source.objc'
     'patterns': [
-      { 'include': 'source.objc' }
       { 'include': '#double_at' }
       { 'include': '#link1' }
       { 'include': '#link2' }
+      { 'include': 'source.objc' }
     ]
   }
   {
-    'begin': '^(<<(html):([^>]+)>>=)\\s*$'
+    'begin': '^<<(html):([^>]+)>>=\\s*$'
     'beginCaptures':
       '0':
         'name': 'constant.language.literate'
@@ -347,14 +347,14 @@
     'name': 'markup.code.html.literate'
     'contentName': 'source.html.basic'
     'patterns': [
-      { 'include': 'text.html.basic' }
       { 'include': '#double_at' }
       { 'include': '#link1' }
       { 'include': '#link2' }
+      { 'include': 'text.html.basic' }
     ]
   }
   {
-    'begin': '^(<<(ya?ml):([^>]+)>>=)\\s*$'
+    'begin': '^<<(ya?ml):([^>]+)>>=\\s*$'
     'beginCaptures':
       '0':
         'name': 'constant.language.literate'
@@ -366,14 +366,14 @@
     'name': 'markup.code.yaml.literate'
     'contentName': 'source.yaml'
     'patterns': [
-      { 'include': 'source.yaml' }
       { 'include': '#double_at' }
       { 'include': '#link1' }
       { 'include': '#link2' }
+      { 'include': 'source.yaml' }
     ]
   }
   {
-    'begin': '^(<<(elixir):([^>]+)>>=)\\s*$'
+    'begin': '^<<(elixir):([^>]+)>>=\\s*$'
     'beginCaptures':
       '0':
         'name': 'constant.language.literate'
@@ -385,17 +385,19 @@
     'name': 'markup.code.elixir.literate'
     'contentName': 'source.elixir'
     'patterns': [
-      { 'include': 'source.elixir' }
       { 'include': '#double_at' }
       { 'include': '#link1' }
       { 'include': '#link2' }
+      { 'include': 'source.elixir' }
     ]
   }
   {
-    'begin': '^(<<([^>]+)>>=).*$'
+    'begin': '^<<([^>]+)>>=.*$'
     'beginCaptures':
       '0':
         'name': 'constant.language.literate'
+      '1':
+        'name': 'entity.name.section.literate'
     'end': '^@\\s.*$'
     'name': 'markup.raw.literate'
     'contentName': 'source.raw'
