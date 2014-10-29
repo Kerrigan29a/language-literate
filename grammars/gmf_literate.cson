@@ -1,0 +1,9 @@
+'name': 'Literate code (Markdown)'
+'scopeName': 'source.gmf.literate'
+'firstLineMatch': '^\\s*.*\\s*literate:(markdown|mdown|md).*\\s*$'
+
+
+
+'patterns': [
+  { 'include': 'source.gmf' }
+]
