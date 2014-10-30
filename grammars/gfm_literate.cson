@@ -1,11 +1,11 @@
 'name': 'Literate code (Markdown)'
-'scopeName': 'source.gfm.literate'
+'scopeName': 'source.literate.gfm'
 'fileTypes': [
   'w'
   'nw'
   'noweb'
 ]
-'firstLineMatch': '^\\s*.*\\s*literate:(markdown|mdown|md).*\\s*$'
+'firstLineMatch': '^\\s*.*\\s*literate:\\s*syntax\\s*=\\s*(markdown|mdown|md)\\s*.*\\s*$'
 
 
 'patterns': [

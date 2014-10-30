@@ -5,9 +5,6 @@
   'nw'
   'noweb'
 ]
-
-
-
 'firstLineMatch': '^\\s*.*\\s*literate:.*\\s*$'
 
 
@@ -393,7 +390,7 @@
     ]
   }
   {
-    'begin': '^<<([^>]+)>>=.*$'
+    'begin': '^<<([^>]+)>>=\\s*$'
     'beginCaptures':
       '0':
         'name': 'constant.language.literate'
@@ -435,5 +432,12 @@
         'name': 'constant.language.literate'
       '1':
         'name': 'markup.underline.link.literate'
+  }
+  'section-declaration': {
+    'match': '^<<([^>]+)>>=\\s*$'
+    'name': 'link'
+    'captures':
+      '0':
+        'name': 'invalid.illegal.section-declaration.literate'
   }
 }

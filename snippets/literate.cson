@@ -1,7 +1,7 @@
 '.source.literate':
   'code chunk':
     'preffix': '<<'
-    'body': '<<$1>>=\n$2\n@$0'
+    'body': '<<${1:code name}>>=\n${2:code body}\n@$3'
   'root code chunk':
     'preffix': '<<*'
-    'body': '<<*>>=\n$1\n@$0'
+    'body': '<<*>>=\n${1:code body}\n@$2'
