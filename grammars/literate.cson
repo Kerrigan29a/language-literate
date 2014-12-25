@@ -305,11 +305,14 @@
         'name': 'entity.name.section.literate'
     'end': '^@\\s.*$'
     'name': 'markup.code.c++.literate'
-    'contentName': 'source.c++'
+    'contentName': 'source.cpp'
     'patterns': [
       { 'include': '#double_at' }
       { 'include': '#link1' }
       { 'include': '#link2' }
+      { 'include': 'source.cpp' }
+
+      # For backward-compatibility with Atom version < 0.166
       { 'include': 'source.c++' }
     ]
   }
