@@ -4,6 +4,8 @@
   'w'
   'nw'
   'noweb'
+  'lsn'
+  'lesen'
 ]
 'firstLineMatch': '^\\s*.*\\s*literate:\\s*syntax\\s*=\\s*(markdown|mdown|md)\\s*.*\\s*$'
 
