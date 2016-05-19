@@ -4,6 +4,8 @@
   'w'
   'nw'
   'noweb'
+  'lsn'
+  'lesen'
 ]
 'firstLineMatch': '^\\s*.*\\s*literate:.*\\s*$'
 
@@ -11,7 +13,7 @@
 
 'patterns': [
   {
-    'begin': '^(<<(coffee-?(script)?):([^>]+)>>=)\\s*$'
+    'begin': '^(<<(coffee-?(script)?):([^>]+)>>[\+]?=)\\s*$'
     'beginCaptures':
       '0':
         'name': 'constant.language.lterat'
@@ -30,7 +32,7 @@
     ]
   }
   {
-    'begin': '^<<(javascript|js):([^>]+)>>=\\s*$'
+    'begin': '^<<(javascript|js):([^>]+)>>[\+]?=\\s*$'
     'beginCaptures':
       '0':
         'name': 'constant.language.literate'
@@ -49,7 +51,7 @@
     ]
   }
   {
-    'begin': '^<<(markdown|mdown|md):([^>]+)>>=\\s*$'
+    'begin': '^<<(markdown|mdown|md):([^>]+)>>[\+]?=\\s*$'
     'beginCaptures':
       '0':
         'name': 'constant.language.literate'
@@ -67,7 +69,7 @@
     ]
   }
   {
-    'begin': '^<<(json):([^>]+)>>=\\s*$'
+    'begin': '^<<(json):([^>]+)>>[\+]?=\\s*$'
     'beginCaptures':
       '0':
         'name': 'constant.language.literate'
@@ -86,7 +88,7 @@
     ]
   }
   {
-    'begin': '^<<(css):([^>]+)>>=\\s*$'
+    'begin': '^<<(css):([^>]+)>>[\+]?=\\s*$'
     'beginCaptures':
       '0':
         'name': 'constant.language.literate'
@@ -105,7 +107,7 @@
     ]
   }
   {
-    'begin': '^<<(less):([^>]+)>>=\\s*$'
+    'begin': '^<<(less):([^>]+)>>[\+]?=\\s*$'
     'beginCaptures':
       '0':
         'name': 'constant.language.literate'
@@ -124,7 +126,7 @@
     ]
   }
   {
-    'begin': '^<<(xml):([^>]+)>>=\\s*$'
+    'begin': '^<<(xml):([^>]+)>>[\+]?=\\s*$'
     'beginCaptures':
       '0':
         'name': 'constant.language.literate'
@@ -143,7 +145,7 @@
     ]
   }
   {
-    'begin': '^<<(ruby|rb):([^>]+)>>=\\s*$'
+    'begin': '^<<(ruby|rb):([^>]+)>>[\+]?=\\s*$'
     'beginCaptures':
       '0':
         'name': 'constant.language.literate'
@@ -162,7 +164,7 @@
     ]
   }
   {
-    'begin': '^<<(java):([^>]+)>>=\\s*$'
+    'begin': '^<<(java):([^>]+)>>[\+]?=\\s*$'
     'beginCaptures':
       '0':
         'name': 'constant.language.literate'
@@ -181,7 +183,7 @@
     ]
   }
   {
-    'begin': '^<<(erlang):([^>]+)>>=\\s*$'
+    'begin': '^<<(erlang):([^>]+)>>[\+]?=\\s*$'
     'beginCaptures':
       '0':
         'name': 'constant.language.literate'
@@ -200,7 +202,7 @@
     ]
   }
   {
-    'begin': '^<<(cs(harp)?):([^>]+)>>=\\s*$'
+    'begin': '^<<(cs(harp)?):([^>]+)>>[\+]?=\\s*$'
     'beginCaptures':
       '0':
         'name': 'constant.language.literate'
@@ -219,7 +221,7 @@
     ]
   }
   {
-    'begin': '^<<(php):([^>]+)>>=\\s*$'
+    'begin': '^<<(php):([^>]+)>>[\+]?=\\s*$'
     'beginCaptures':
       '0':
         'name': 'constant.language.literate'
@@ -238,7 +240,7 @@
     ]
   }
   {
-    'begin': '^<<(sh|bash):([^>]+)>>=\\s*$'
+    'begin': '^<<(sh|bash):([^>]+)>>[\+]?=\\s*$'
     'beginCaptures':
       '0':
         'name': 'constant.language.literate'
@@ -257,7 +259,7 @@
     ]
   }
   {
-    'begin': '^<<(py(thon)?):([^>]+)>>=\\s*$'
+    'begin': '^<<(py(thon)?):([^>]+)>>[\+]?=\\s*$'
     'beginCaptures':
       '0':
         'name': 'constant.language.literate'
@@ -276,7 +278,7 @@
     ]
   }
   {
-    'begin': '^<<(c):([^>]+)>>=\\s*$'
+    'begin': '^<<(c):([^>]+)>>[\+]?=\\s*$'
     'beginCaptures':
       '0':
         'name': 'constant.language.literate'
@@ -295,7 +297,7 @@
     ]
   }
   {
-    'begin': '^<<(c(pp|\\+\\+)):([^>]+)>>=\\s*$'
+    'begin': '^<<(c(pp|\\+\\+)):([^>]+)>>[\+]?=\\s*$'
     'beginCaptures':
       '0':
         'name': 'constant.language.literate'
@@ -317,7 +319,7 @@
     ]
   }
   {
-    'begin': '^<<(objc|objective-c):([^>]+)>>=\\s*$'
+    'begin': '^<<(objc|objective-c):([^>]+)>>[\+]?=\\s*$'
     'beginCaptures':
       '0':
         'name': 'constant.language.literate'
@@ -336,7 +338,7 @@
     ]
   }
   {
-    'begin': '^<<(html):([^>]+)>>=\\s*$'
+    'begin': '^<<(html):([^>]+)>>[\+]?=\\s*$'
     'beginCaptures':
       '0':
         'name': 'constant.language.literate'
@@ -355,7 +357,7 @@
     ]
   }
   {
-    'begin': '^<<(ya?ml):([^>]+)>>=\\s*$'
+    'begin': '^<<(ya?ml):([^>]+)>>[\+]?=\\s*$'
     'beginCaptures':
       '0':
         'name': 'constant.language.literate'
@@ -374,7 +376,7 @@
     ]
   }
   {
-    'begin': '^<<(elixir):([^>]+)>>=\\s*$'
+    'begin': '^<<(elixir):([^>]+)>>[\+]?=\\s*$'
     'beginCaptures':
       '0':
         'name': 'constant.language.literate'
@@ -393,7 +395,7 @@
     ]
   }
   {
-    'begin': '^<<([^>]+)>>=\\s*$'
+    'begin': '^<<([^>]+)>>[\+]?=\\s*$'
     'beginCaptures':
       '0':
         'name': 'constant.language.literate'
@@ -437,7 +439,7 @@
         'name': 'markup.underline.link.literate'
   }
   'section-declaration': {
-    'match': '^<<([^>]+)>>=\\s*$'
+    'match': '^<<([^>]+)>>[\+]?=\\s*$'
     'name': 'link'
     'captures':
       '0':
